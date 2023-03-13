@@ -1,0 +1,96 @@
+:root{
+    --normal-font-size: clamp(1.25rem, 3vw, 1.5rem);
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: linear-gradient(0deg, rgba(36, 19, 0, 1) 0%, rgba(121, 112, 9, 1) 25%, rgba(255, 244, 0, 1) 100%);
+    margin: 0;
+}
+
+.titlelogo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    z-index: -2;
+    -webkit-user-drag: none;
+    -moz-user-select: none;
+    user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+}
+
+.titlelogo img {
+    width: 25vw;
+    min-width: 25rem;
+}
+
+.wrapper {
+    height: 100vh;
+    overflow-y: auto;
+    overflow-x: hidden;
+    perspective: 10px;
+}
+
+header {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    transform-style: preserve-3d;
+    z-index: -1;
+}
+
+.background {
+    z-index: -3;
+    transform: translateZ(-7.5px) scale(1.75);
+}
+
+.foreground {
+    z-index: -1;
+    transform: translateZ(-2.5px) scale(1.25);
+}
+
+.ground {
+    position: absolute;
+    bottom: 0vh;
+    width: 100vw;
+    object-fit: cover;
+}
+
+
+.background,
+.foreground {
+    position: absolute;
+    height: 100%;
+    width: 100vw;
+    object-fit: cover;
+    -webkit-user-drag: none;
+    -moz-user-select: none;
+    user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+}
+
+#welcome {
+    display: flex;
+    font-size: var(--normal-font-size);
+    color: white;
+    background-color: black;
+    height: clamp(40rem, 8vh , 50rem);
+    min-height: 2rem;
+    overflow-y: hidden;
+}
+
+#welcome p{
+    padding: 1rem;
+}
