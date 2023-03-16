@@ -1,14 +1,28 @@
-:root{
+:root {
     --normal-font-size: clamp(1.25rem, 3vw, 1.5rem);
+    --navbar-height: clamp(3rem, 6vw, 4rem);
+    --navbar-hpos: 70vh;
 }
 
 html {
     scroll-behavior: smooth;
+    overflow: hidden;
+    scroll-padding-top: var(--navbar-height);
 }
 
 body {
-    background: linear-gradient(0deg, rgba(36, 19, 0, 1) 0%, rgba(121, 112, 9, 1) 25%, rgba(255, 244, 0, 1) 100%);
+    scroll-behavior: smooth;
+    overflow: hidden;
+    scroll-padding-top: var(--navbar-height);
+    background: url("pageBackground.png");
     margin: 0;
+    background-size: cover;
+    image-rendering: pixelated;
+    height: 100vh;
+    overflow-y: auto;
+    overflow-x: hidden;
+    perspective: 10px;
+    transform-style: preserve-3d;
 }
 
 .titlelogo {
@@ -16,7 +30,7 @@ body {
     justify-content: center;
     align-items: center;
     position: absolute;
-    z-index: -2;
+    z-index: 0;
     -webkit-user-drag: none;
     -moz-user-select: none;
     user-select: none;
@@ -30,24 +44,40 @@ body {
 
 .titlelogo img {
     width: 25vw;
-    min-width: 25rem;
+    min-width: 20rem;
+    max-width: 45rem;
+    margin-top: -5em;
 }
 
-.wrapper {
-    height: 100vh;
-    overflow-y: auto;
-    overflow-x: hidden;
-    perspective: 10px;
-}
-
-header {
-    position: relative;
+#title {
+    top: 0;
+    position: absolute;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100%;
+    width: 100%;
     transform-style: preserve-3d;
     z-index: -1;
+}
+
+.navbar {
+    position: sticky;
+    display: flex;
+    justify-content: center;
+    margin-top: var(--navbar-hpos);
+    top: .5rem;
+    width: 100vw;
+    height: var(--navbar-height);
+    z-index: 99;
+}
+
+.navbar a {
+    height: 100%;
+}
+
+.navbar img {
+    height: 100%;
 }
 
 .background {
@@ -81,16 +111,31 @@ header {
     -ms-user-select: none;
 }
 
-#welcome {
+#about {
     display: flex;
     font-size: var(--normal-font-size);
     color: white;
     background-color: black;
-    height: clamp(40rem, 8vh , 50rem);
+    min-height: 2rem;
+    overflow-y: hidden;
+    margin-top: calc(100vh - var(--navbar-height) - var(--navbar-hpos))
+}
+
+#about p {
+    padding: 1rem;
+    margin-top: 0;
+}
+
+#stuff {
+    display: flex;
+    font-size: var(--normal-font-size);
+    color: white;
+    background-color: black;
     min-height: 2rem;
     overflow-y: hidden;
 }
 
-#welcome p{
+#stuff p {
     padding: 1rem;
+    margin-top: 0;
 }
