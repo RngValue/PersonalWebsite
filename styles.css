@@ -1,6 +1,6 @@
 :root {
     --normal-font-size: clamp(1.25rem, 3vw, 1.5rem);
-    --navbar-height: clamp(3rem, 6vw, 4rem);
+    --navbar-height: max(4.5rem, 6vw);
     --navbar-hpos: 70vh;
 }
 
@@ -65,15 +65,21 @@ body {
     position: sticky;
     display: flex;
     justify-content: center;
+    align-items: center;
     margin-top: var(--navbar-hpos);
-    top: .5rem;
+    top: 0;
     width: 100vw;
     height: var(--navbar-height);
     z-index: 99;
+    transition: background-color .25s;
+}
+.nav-scrolled{
+    background-color: black;
 }
 
 .navbar a {
-    height: 100%;
+    position: static;
+    height: 90%;
 }
 
 .navbar img {
@@ -136,6 +142,20 @@ body {
 }
 
 #stuff p {
+    padding: 1rem;
+    margin-top: 0;
+}
+
+#general {
+    display: flex;
+    font-size: var(--normal-font-size);
+    color: white;
+    background-color: black;
+    min-height: 2rem;
+    overflow-y: hidden;
+}
+
+#general p {
     padding: 1rem;
     margin-top: 0;
 }
