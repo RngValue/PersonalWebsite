@@ -1,4 +1,4 @@
-const navbar = document.querySelector(".navbar");
+const navbar = document.querySelector(".navbarBack");
 
 const observer = new IntersectionObserver((entries) => {
     entries.forEach((entry) => {
