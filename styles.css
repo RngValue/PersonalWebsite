@@ -1,6 +1,6 @@
 :root {
     --normal-font-size: clamp(1.25rem, 3vw, 1.5rem);
-    --navbar-height: max(4.5rem, 6vw);
+    --navbar-height: max(3rem, 6vw);
     --navbar-hpos: 70vh;
     --navbar-offset: .5rem;
     --fixedElement-offset: 100vh;
@@ -172,7 +172,7 @@ body {
     margin-top: 0;
 }
 
-#general {
+.general {
     display: flex;
     font-size: var(--normal-font-size);
     color: white;
