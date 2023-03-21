@@ -3,6 +3,25 @@
     --navbar-height: max(4.5rem, 6vw);
     --navbar-hpos: 70vh;
     --navbar-offset: .5rem;
+    --fixedElement-offset: 100vh;
+}
+
+.backToTopBtn {
+    border-radius: .75rem;
+    padding: var(--navbar-offset);
+    background-color: black;
+    box-shadow: 0px 0px 8px rgba(0,0,0,.75);
+    display: none;
+    visibility: hidden;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity .25s, visibility .25s;
+}
+.showbackbutt{
+    display: flex;
+    visibility: visible;
+    opacity: 1;
 }
 
 html {
@@ -13,7 +32,6 @@ html {
 
 body {
     scroll-behavior: smooth;
-    overflow: hidden;
     scroll-padding-top: var(--navbar-height);
     background: url("pageBackground.png");
     margin: 0;
@@ -63,6 +81,7 @@ body {
 }
 
 .navbar {
+    gap: .5rem;
     position: sticky;
     display: flex;
     justify-content: center;
@@ -91,14 +110,6 @@ body {
 
 .navbar img {
     height: 100%;
-}
-
-.backToTopBtn {
-    z-index: 9999;
-    position: fixed;
-    bottom: 0px;
-    right: 0px;
-    image-rendering: pixelated;
 }
 
 .background {
@@ -139,7 +150,7 @@ body {
     background-color: black;
     min-height: 2rem;
     overflow-y: hidden;
-    margin-top: calc(100vh - var(--navbar-height) - var(--navbar-hpos))
+    margin-top: calc(100vh - var(--navbar-height) - var(--navbar-hpos));
 }
 
 #about p {

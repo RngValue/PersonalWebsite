@@ -1,8 +1,8 @@
 const navbar = document.querySelector(".navbarBack");
+const backbutt = document.querySelector(".backToTopBtn");
 
 const observer = new IntersectionObserver((entries) => {
     entries.forEach((entry) => {
-        console.log(entry);
         if (entry.isIntersecting){
             navbar.classList.add("nav-scrolled");
         }else{
@@ -11,6 +11,19 @@ const observer = new IntersectionObserver((entries) => {
     });
 });
 
+const observerer = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+        if (entry.isIntersecting){
+            backbutt.classList.add("showbackbutt")
+        }else{
+            backbutt.classList.remove("showbackbutt")
+        }
+    });
+});
+
 
 const pageSectionStuff = document.querySelectorAll("#everything");
 pageSectionStuff.forEach((el) => observer.observe(el));
+
+const pageSectionStaff = document.querySelectorAll("#everythingwithin");
+pageSectionStaff.forEach((el) => observerer.observe(el));
