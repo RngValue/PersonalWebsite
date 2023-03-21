@@ -181,7 +181,7 @@ body {
     overflow-y: hidden;
 }
 
-#general p {
+.general p {
     padding: 1rem;
     margin-top: 0;
 }
