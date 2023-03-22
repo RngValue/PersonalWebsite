@@ -11,7 +11,7 @@ document.addEventListener('DOMContentLoaded', () => {
             y: -80,
             top: '0%'
         }, '-=6')
-        .to('.content, .titlelogo, #everything, #title', 6, {
+        .to('.content, .titlelogo, #title', 6, {
             top: '0%'
         }, '-=6')
 
