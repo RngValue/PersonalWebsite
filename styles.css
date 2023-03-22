@@ -10,7 +10,7 @@
     border-radius: .75rem;
     padding: var(--navbar-offset);
     background-color: black;
-    box-shadow: 0px 0px 8px rgba(0,0,0,.75);
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, .75);
     display: none;
     visibility: hidden;
     justify-content: center;
@@ -18,7 +18,8 @@
     opacity: 0;
     transition: opacity .25s, visibility .25s;
 }
-.showbackbutt{
+
+.showbackbutt {
     display: flex;
     visibility: visible;
     opacity: 1;
@@ -92,11 +93,13 @@ body {
     height: var(--navbar-height);
     z-index: 99;
 }
-.nav-scrolled{
+
+.nav-scrolled {
     background-color: black;
-    box-shadow: 0px 0px 8px rgba(0,0,0,.75);
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, .75);
 }
-.navbarBack{
+
+.navbarBack {
     height: 100%;
     padding: var(--navbar-offset);
     transition: background-color .25s, box-shadow .25s;
@@ -148,14 +151,18 @@ body {
     font-size: var(--normal-font-size);
     color: white;
     background-color: black;
-    min-height: 2rem;
+    height: 100vh;
     overflow-y: hidden;
     margin-top: calc(100vh - var(--navbar-height) - var(--navbar-hpos));
 }
 
-#about p {
-    padding: 1rem;
-    margin-top: 0;
+.aboutBack {
+    position: absolute;
+    opacity: .25;
+    width: 84vw;
+    height: auto;
+    right: -25vw;
+    top: -10vh;
 }
 
 #stuff {
