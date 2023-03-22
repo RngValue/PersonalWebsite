@@ -33,10 +33,20 @@ html {
 body {
     scroll-behavior: smooth;
     scroll-padding-top: var(--navbar-height);
-    background: url("pageBackground.png");
+    background: url("pageBackground.png") currentColor;
     margin: 0;
-    background-size: cover;
+    background-size: 200vh;
     image-rendering: pixelated;
+}
+
+.backgroundelementbecausefuckmylife {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background-image: url('pageBackground.png');
+    top: 0;
+    background-size: 200vh;
+    z-index: -99999999999;
 }
 
 .titlelogo {

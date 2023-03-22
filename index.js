@@ -8,7 +8,7 @@ document.addEventListener('DOMContentLoaded', () => {
             top: '0%'
         })
         .to('.background', 6, {
-            y: -350,
+            y: -330,
             top: '0%'
         }, '-=6')
         .to('.content, .titlelogo, #everything, #title', 6, {
