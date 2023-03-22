@@ -27,7 +27,6 @@
 
 html {
     scroll-behavior: smooth;
-    overflow: hidden;
     scroll-padding-top: var(--navbar-height);
 }
 
@@ -38,11 +37,6 @@ body {
     margin: 0;
     background-size: cover;
     image-rendering: pixelated;
-    height: 100vh;
-    overflow-y: auto;
-    overflow-x: hidden;
-    perspective: 10px;
-    transform-style: preserve-3d;
 }
 
 .titlelogo {
@@ -58,7 +52,7 @@ body {
     -ms-user-select: none;
     top: 0;
     left: 0;
-    width: 100vw;
+    width: 100%;
     height: 100vh;
 }
 
@@ -70,6 +64,7 @@ body {
 }
 
 #title {
+    overflow-x: hidden;
     top: 0;
     position: absolute;
     display: flex;
@@ -77,7 +72,6 @@ body {
     align-items: center;
     height: 100%;
     width: 100%;
-    transform-style: preserve-3d;
     z-index: -1;
 }
 
@@ -88,8 +82,8 @@ body {
     justify-content: center;
     align-items: center;
     margin-top: var(--navbar-hpos);
-    top: calc(var(--navbar-offset) + .25rem);
-    width: 100vw;
+    top: calc(var(--navbar-offset) + 1rem);
+    width: 100%;
     height: var(--navbar-height);
     z-index: 99;
 }
@@ -117,18 +111,16 @@ body {
 
 .background {
     z-index: -3;
-    transform: translateZ(-7.5px) scale(1.75);
 }
 
 .foreground {
     z-index: -1;
-    transform: translateZ(-2.5px) scale(1.25);
 }
 
 .ground {
     position: absolute;
     bottom: 0vh;
-    width: 100vw;
+    width: 100%;
     object-fit: cover;
 }
 
@@ -152,7 +144,6 @@ body {
     color: white;
     background-color: black;
     height: 100vh;
-    overflow-y: hidden;
     margin-top: calc(100vh - var(--navbar-height) - var(--navbar-hpos));
 }
 
