@@ -1,24 +1,25 @@
+
 document.addEventListener('DOMContentLoaded', () => {
-    let controller = new ScrollMagic.Controller();
+    let controller = new ScrollMagic.Controller({
+        refreshInterval: 1
+      })
 
     let timeline = new TimelineMax();
     timeline
         .to('.foreground', 6, {
             y: -250,
-            top: '0%'
         })
         .to('.background', 6, {
             y: -80,
-            top: '0%'
         }, '-=6')
         .to('.content, .titlelogo, #title', 6, {
-            top: '0%'
+            top: 0
         }, '-=6')
 
     let scene = new ScrollMagic.Scene({
         triggerElement: 'section',
         duration: '110%',
-        triggerHook: 0
+        triggerHook: 0,
     })
         .setTween(timeline)
         .setPin('section')
