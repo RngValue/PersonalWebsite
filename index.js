@@ -15,6 +15,9 @@ document.addEventListener('DOMContentLoaded', () => {
         .to('.content, .titlelogo, #title', 6, {
             top: 0
         }, '-=6')
+        .to('#everything', 6, {
+            top: '0.09px'
+        }, '-=6')
 
     let scene = new ScrollMagic.Scene({
         triggerElement: 'section',
