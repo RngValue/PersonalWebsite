@@ -1,6 +1,5 @@
 function scrollToThe(a){
     const sekce = document.querySelector(a);
-    console.log(sekce);
     sekce.scrollIntoView();
 }
 
