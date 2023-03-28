@@ -1,3 +1,9 @@
+function scrollToThe(a){
+    const sekce = document.querySelector(a);
+    console.log(sekce);
+    sekce.scrollIntoView();
+}
+
 
 document.addEventListener('DOMContentLoaded', () => {
     let controller = new ScrollMagic.Controller({
