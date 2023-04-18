@@ -1,13 +1,15 @@
 <!DOCTYPE html>
 
-<html>
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>RngValue</title>
-    <meta name="description" content="I am RngValue, a solo gamedev and a pixelartist. This website is supposed to be my portfolio, but I treat it more like an archive of my games and drawings.">
+    <meta name="description"
+        content="I am RngValue, a solo gamedev and a pixelartist. This website is supposed to be my portfolio, but I treat it more like an archive of my games and drawings.">
     <link rel="stylesheet" href="styles.css">
 </head>
 
@@ -15,37 +17,41 @@
     <div id="wrapper">
         <div class="backgroundelementbecausefuckmylife"></div>
         <div id="ehmtitle" class="titlelogo">
-            <img src="Logo.png" draggable="false">
+            <img src="Logo.png" alt="" draggable="false">
         </div>
         <div class="navbar">
             <div class="navbarBack">
-                <btn title="About" onclick="scrollToThe('#about')"><img src="aboutBtnInact.png" onmouseover="this.src='aboutBtn.png'"
-                        onmouseout="this.src='aboutBtnInact.png'"></btn>
-                <btn title="Games" onclick="scrollToThe('#games')"><img src="gamesBtnInact.png" onmouseover="this.src='gamesBtn.png'"
-                        onmouseout="this.src='gamesBtnInact.png'"></btn>
-                <btn title="Art" onclick="scrollToThe('#art')"><img src="artBtnInact.png"
+                <btn title="About" onclick="scrollToThe('#about')"><img src="aboutBtnInact.png" alt=""
+                        onmouseover="this.src='aboutBtn.png'" onmouseout="this.src='aboutBtnInact.png'"></btn>
+                <btn title="Games" onclick="scrollToThe('#games')"><img src="gamesBtnInact.png" alt=""
+                        onmouseover="this.src='gamesBtn.png'" onmouseout="this.src='gamesBtnInact.png'"></btn>
+                <btn title="Art" onclick="scrollToThe('#art')"><img src="artBtnInact.png" alt=""
                         onmouseover="this.src='artBtn.png'" onmouseout="this.src='artBtnInact.png'"></btn>
-                <btn title="Socials" onclick="scrollToThe('#socials')"><img src="socialsBtnInact.png"
+                <btn title="Socials" onclick="scrollToThe('#socials')"><img src="socialsBtnInact.png" alt=""
                         onmouseover="this.src='socialsBtn.png'" onmouseout="this.src='socialsBtnInact.png'"></btn>
             </div>
-            <btn title="Go Back" class="backToTopBtn" onclick="scrollToThe('#ehmtitle')"><img src="backtotopBtnInact.png"
-                    onmouseover="this.src='backtotopBtn.png'" onmouseout="this.src='backtotopBtnInact.png'"></btn>
+            <btn title="Go Back" class="backToTopBtn" onclick="scrollToThe('#ehmtitle')"><img
+                    src="backtotopBtnInact.png" alt="" onmouseover="this.src='backtotopBtn.png'"
+                    onmouseout="this.src='backtotopBtnInact.png'"></btn>
         </div>
 
         <section id="title">
-            <img src="background.png" class="background" draggable="false">
-            <img src="ground.png" class="foreground" draggable="false">
+            <h1 style="display: none;">RngValue</h1>
+            <img src="background.png" alt="" class="background" draggable="false">
+            <img src="ground.png" alt="" class="foreground" draggable="false">
         </section>
 
         <div class="ground"></div>
         <!--<img src="forground.png" class="ground" draggable="false">-->
 
         <section id="everything">
+            <h2 style="display: none;">everything</h2>
             <section id="everythingwithin">
+                <h2 style="display: none;">everything within</h2>
                 <section id="about">
-                    <h1><span class="gradientText">ABOUT</span></h1>
+                    <h2><span class="gradientText">ABOUT</span></h2>
                     <iframe class="aboutVideo" src="https://www.youtube.com/embed/ULrxa1KVzZU"
-                        title="YouTube video player" frameborder="0"
+                        title="YouTube video player"
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                         allowfullscreen></iframe>
                     <p>Imagine naming yourself "<span class="gradientText"><strong>RngValue</strong></span>" and letting your entire personality be based around <span class="gradientText"><strong>tophats</strong></span>...</p>
@@ -55,6 +61,7 @@
                     <p></p>
                 </section>
                 <section id="games">
+                    <h2><span class="gradientText">GAMES</span></h2>
                     <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magni ab sequi animi ea voluptatibus
                         nihil
                         consectetur
@@ -86,6 +93,7 @@
                         neque nulla totam ab voluptatem, sit accusantium,</p>
                 </section>
                 <section id="art" class="general">
+                    <h2><span class="gradientText">ART</span></h2>
                     <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magni ab sequi animi ea voluptatibus
                         nihil
                         consectetur
@@ -117,6 +125,7 @@
                         neque nulla totam ab voluptatem, sit accusantium,</p>
                 </section>
                 <section id="socials" class="general">
+                    <h2><span class="gradientText">SOCIALS</span></h2>
                     <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magni ab sequi animi ea voluptatibus
                         nihil
                         consectetur
@@ -160,6 +169,6 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.6/ScrollMagic.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.6/plugins/animation.gsap.js"></script>
 
-<script src="index.js"></script>
+<script src="index.js" type="text/javascript"></script>
 
 </html>

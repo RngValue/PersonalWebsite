@@ -183,7 +183,7 @@ body {
 }
 
 /*@media (orientation: portrait){*/
-h1 {
+h2 {
     font-size: calc(var(--normal-font-size)*2);
     margin-bottom: 0px;
     font-family: 'Secular One', sans-serif;
@@ -202,6 +202,7 @@ p {
     width: clamp(10em, 95vw, 25em);
     height: clamp(15em, 30vw,20rem);
     border-radius: 1rem;
+    border-color: rgba(0, 0, 0, 0);
 }
 
 #about {
@@ -209,7 +210,6 @@ p {
     font-size: var(--normal-font-size);
     color: white;
     background-color: black;
-
     overflow-x: hidden;
     flex-direction: column;
     align-items: center;
@@ -232,6 +232,8 @@ p {
     background-color: black;
     min-height: 2rem;
     overflow-y: hidden;
+    flex-direction: column;
+    align-items: center;
 }
 
 #games p {
@@ -246,6 +248,8 @@ p {
     background-color: black;
     min-height: 2rem;
     overflow-y: hidden;
+    flex-direction: column;
+    align-items: center;
 }
 
 .general p {
