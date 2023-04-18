@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+
 :root {
     --normal-font-size: clamp(1.25rem, 3vw, 1.5rem);
     --navbar-height: max(3rem, 5vw);
@@ -161,6 +163,24 @@ body {
     -ms-user-select: none;
 }
 
+/*@media (orientation: portrait){*/
+h1 {
+    font-size: calc(var(--normal-font-size)*1.5);
+    font-family: 'Varela Round', sans-serif;
+    text-align: center;
+}
+
+p {
+    font-size: var(--normal-font-size);
+    font-family: 'Varela Round', sans-serif;
+    text-align: center;
+}
+
+.aboutVideo{
+    width: 99%;
+    height: 50vh;
+}
+
 #about {
     display: flex;
     font-size: var(--normal-font-size);
@@ -168,6 +188,10 @@ body {
     background-color: black;
     height: 100vh;
     margin-top: calc(100vh - var(--navbar-height) - var(--navbar-hpos));
+    overflow-x: hidden;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
 }
 
 .aboutBack {
@@ -206,3 +230,5 @@ body {
     padding: 1rem;
     margin-top: 0;
 }
+
+/*}*/
