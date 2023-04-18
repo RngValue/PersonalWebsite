@@ -12,10 +12,10 @@ document.addEventListener('DOMContentLoaded', () => {
     let timeline = new TimelineMax();
     timeline
         .to('.foreground', 6, {
-            y: -250,
+            y: -2500,
         })
         .to('.background', 6, {
-            y: -80,
+            y: -1300,
         }, '-=6')
         .to('.content, .titlelogo, #title', 6, {
             top: 0
@@ -26,7 +26,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     let scene = new ScrollMagic.Scene({
         triggerElement: 'section',
-        duration: '110%',
+        duration: '1000%',
         triggerHook: 0,
     })
         .setTween(timeline)
