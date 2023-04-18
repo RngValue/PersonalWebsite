@@ -11,6 +11,10 @@
     --bright-yellow: #FFD800;
 }
 
+btn {
+    cursor: pointer;
+}
+
 .gradientText {
     background: linear-gradient(to right, var(--dark-orange), var(--bright-yellow));
     -webkit-background-clip: text;
@@ -195,8 +199,9 @@ p {
 }
 
 .aboutVideo {
-    width: 95vw;
-    height: 30vh;
+    width: clamp(10em, 95vw, 25em);
+    height: clamp(15em, 30vw,20rem);
+    border-radius: 1rem;
 }
 
 #about {
