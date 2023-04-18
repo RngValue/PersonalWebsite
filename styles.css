@@ -220,7 +220,7 @@ p {
     top: -10vh;
 }
 
-#stuff {
+#games {
     display: flex;
     font-size: var(--normal-font-size);
     color: white;
@@ -229,7 +229,7 @@ p {
     overflow-y: hidden;
 }
 
-#stuff p {
+#games p {
     padding: 1rem;
     margin-top: 0;
 }
