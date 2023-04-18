@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Secular+One&display=swap');
 
 :root {
     --normal-font-size: clamp(1.25rem, 3vw, 1.5rem);
@@ -6,6 +7,14 @@
     --navbar-hpos: 70vh;
     --navbar-offset: .5rem;
     --fixedElement-offset: 100vh;
+    --dark-orange: #FF6A00;
+    --bright-yellow: #FFD800;
+}
+
+.gradientText {
+    background: linear-gradient(to right, var(--dark-orange), var(--bright-yellow));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .backToTopBtn {
@@ -42,6 +51,7 @@ body {
 }
 
 #wrapper {
+    scroll-padding-top: var(--navbar-height);
     scroll-behavior: smooth;
     position: absolute;
     width: 100%;
@@ -170,8 +180,9 @@ body {
 
 /*@media (orientation: portrait){*/
 h1 {
-    font-size: calc(var(--normal-font-size)*1.5);
-    font-family: 'Varela Round', sans-serif;
+    font-size: calc(var(--normal-font-size)*2);
+    margin-bottom: 0px;
+    font-family: 'Secular One', sans-serif;
     text-align: center;
 }
 
@@ -182,8 +193,8 @@ p {
 }
 
 .aboutVideo {
-    width: 99%;
-    height: 50vh;
+    width: 95vw;
+    height: 30vh;
 }
 
 #about {
