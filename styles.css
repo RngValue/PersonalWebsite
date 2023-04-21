@@ -189,6 +189,12 @@ h2 {
     font-family: 'Secular One', sans-serif;
     text-align: center;
 }
+h3 {
+    font-size: calc(var(--normal-font-size)*1.5);
+    margin-bottom: 0px;
+    font-family: 'Secular One', sans-serif;
+    text-align: center;
+}
 
 p {
     font-size: var(--normal-font-size);
@@ -196,6 +202,55 @@ p {
     text-align: center;
     padding-left: 1rem;
     padding-right: 1rem;
+}
+
+.cisEmote{
+    width: calc(var(--normal-font-size)*1.25);
+}
+
+.socialGrid{
+    grid-gap: 1em;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+}
+.socialItem{
+    display: flex;
+    flex-direction: column;
+    aspect-ratio: 1 / 1;
+    width: clamp(5em, 20vw, 7em);
+}
+
+.youtubeSS{
+    background-color: red;
+}
+.twitterSS{
+    background-color: #1DA1F2;
+}
+.gamejoltSS{
+    background-color: #cf0;
+}
+.newgroundsSS{
+    fill: black;
+    background-color: #FFBE00;
+}
+.itchSS{
+    background-color: #FA5C5C;
+}
+.githubSS{
+    background-color: purple;
+}
+.tumblrSS{
+    background-color: #35465c;
+}
+.roundShit{
+    border-radius: 1rem;
+    transition: fill .25s, background-color .25s;
+}
+
+.roundShit:hover{
+    fill: white;
+    background-color: orange;
 }
 
 .aboutVideo {
