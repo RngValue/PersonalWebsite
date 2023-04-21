@@ -19,8 +19,8 @@ btn {
     background: linear-gradient(to right, var(--dark-orange), var(--bright-yellow));
     background-clip: text;
     color: transparent;
-    /*-webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;*/
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .backToTopBtn {
