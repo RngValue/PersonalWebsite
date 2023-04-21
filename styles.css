@@ -191,7 +191,6 @@ h2 {
 }
 h3 {
     font-size: calc(var(--normal-font-size)*1.5);
-    margin-bottom: 0px;
     font-family: 'Secular One', sans-serif;
     text-align: center;
 }
