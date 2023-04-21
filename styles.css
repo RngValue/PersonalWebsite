@@ -253,6 +253,13 @@ p {
     background-color: orange;
 }
 
+.gameGrid{
+    grid-gap: 1em;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+}
+
 .aboutVideo {
     width: clamp(10em, 95vw, 25em);
     height: clamp(15em, 30vw,20rem);
@@ -286,7 +293,6 @@ p {
     color: white;
     background-color: black;
     min-height: 2rem;
-    overflow-y: hidden;
     flex-direction: column;
     align-items: center;
 }
@@ -302,7 +308,6 @@ p {
     color: white;
     background-color: black;
     min-height: 2rem;
-    overflow-y: hidden;
     flex-direction: column;
     align-items: center;
 }
