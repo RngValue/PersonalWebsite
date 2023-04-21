@@ -210,14 +210,15 @@ p {
 .socialGrid{
     grid-gap: 1em;
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-columns: repeat(auto-fit, minmax(100px,3fr));
+    width: 75%;
+    /*grid-template-rows: 1fr 1fr 1fr 1fr;*/
 }
 .socialItem{
     display: flex;
     flex-direction: column;
     aspect-ratio: 1 / 1;
-    width: clamp(5em, 20vw, 7em);
+    /*width: clamp(5em, 20vw, 7em);*/
 }
 
 .youtubeSS{
@@ -255,8 +256,10 @@ p {
 .gameGrid{
     grid-gap: 1em;
     display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-columns: repeat(auto-fit, minmax(206px,2fr));
+    width: 80%;
+    justify-items: center;
+    /*grid-template-rows: 1fr 1fr 1fr 1fr;*/
 }
 
 .aboutVideo {
