@@ -267,22 +267,32 @@ p {
     display: inline-grid;
     width: 100%;
     height: 100%;
+    border-color: transparent;
+    border-radius: .5rem;
+}
+
+.gameItem img {
+    border-color: transparent;
+    border-radius: .5rem;
 }
 
 .gameItemStuff {
-    height:100%;
     width:100%;
     color: white;
+    text-align: center;
+    line-height: 100%;
+    padding: .5rem;
 }
 
 .gameItemAAA {
     opacity: 0;
     transition: opacity .25s;
+    border-color: transparent;
+    border-radius: .5rem;
 }
 
 .gameItemAAA a{
     width: 50%;
-    text-align: center;
     padding: .5em;
     font-family: 'Varela Round', sans-serif;
 }
