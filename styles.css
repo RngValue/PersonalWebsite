@@ -258,9 +258,45 @@ p {
     grid-gap: 1em;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(206px,2fr));
-    width: 80%;
+    width: 75%;
     justify-items: center;
     /*grid-template-rows: 1fr 1fr 1fr 1fr;*/
+}
+
+.gameItem {
+    display: inline-grid;
+    width: 100%;
+    height: 100%;
+}
+
+.gameItemStuff {
+    height:100%;
+    width:100%;
+    color: white;
+}
+
+.gameItemAAA {
+    opacity: 0;
+    transition: opacity .25s;
+}
+
+.gameItemAAA a{
+    width: 50%;
+    text-align: center;
+    padding: .5em;
+    font-family: 'Varela Round', sans-serif;
+}
+
+.gameItemAAA:hover {
+    opacity: 1;
+}
+
+.gameItem div {
+    margin-bottom: -56.25%;
+    background: rgba(0, 0, 0, .5);
+    z-index: 1;
+    font-size: calc(var(--normal-font-size)*0.75);
+    
 }
 
 .aboutVideo {
