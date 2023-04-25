@@ -14,7 +14,7 @@ function doxme() {
     document.querySelector('.memeImage').classList.add("memeImageAnim");
 
     setTimeout(function () {
-        document.getElementById("forad").innerHTML += `<div style="position: absolute;" class="adsbygoogle" id="test-ad"></div>`;
+        document.getElementById("forad").innerHTML += `<div class="adsbygoogle" id="test-ad"></div>`;
         const testAd = document.getElementById('test-ad');
         const testAdStyle = getComputedStyle(testAd);
 
