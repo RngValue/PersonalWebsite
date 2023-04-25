@@ -18,7 +18,7 @@
 .memeImage {
     position: fixed;
     width: 0%;
-    height: 100vh;
+    height: 0vh;
     z-index: 9999999;
 }
 
@@ -27,9 +27,9 @@
 }
 
 @keyframes imagememeani {
-    0% {opacity: .5; width: 100%;}
-    25% {opacity: .5; width: 100%;}
-    100% {opacity: 0; width: 100%;}
+    0% {opacity: .5; height: 100vh; width: 100%;}
+    25% {opacity: .5; height: 100vh; width: 100%;}
+    100% {opacity: 0; height: 100vh; width: 100%;}
   }
 
 btn {
