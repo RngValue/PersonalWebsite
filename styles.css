@@ -196,12 +196,21 @@ h3 {
     text-align: center;
 }
 
+.doxstats{
+    display: none;
+}
+.doxstatss{
+    display: block;
+}
+
+ul,
+li,
+ol,
 p {
     font-size: var(--normal-font-size);
     font-family: 'Varela Round', sans-serif;
     text-align: center;
-    padding-left: 1rem;
-    padding-right: 1rem;
+    padding: 0;
 }
 
 .cisEmote{

@@ -1,13 +1,40 @@
-function scrollToThe(a){
+function scrollToThe(a) {
     const sekce = document.querySelector(a);
     sekce.scrollIntoView();
 }
 
+//Doxes the user
+
+let userAgent = navigator.userAgent;
+let browserName;
+
+if (userAgent.match(/chrome|chromium|crios/i)) {
+    browserName = "Chrome";
+} else if (userAgent.match(/firefox|fxios/i)) {
+    browserName = "Firefox";
+} else if (userAgent.match(/safari/i)) {
+    browserName = "Safari";
+} else if (userAgent.match(/opr\//i)) {
+    browserName = "Opera";
+} else if (userAgent.match(/edg/i)) {
+    browserName = "Edge";
+} else {
+    browserName = "No browser detection";
+}
+
+document.getElementById('yourbrowser').innerHTML = browserName;
+
+$.getJSON("https://api.ipify.org?format=json", function (data) {
+    // Setting text of element P with id gfg
+    $("#yourip").html(data.ip);
+})
+
+//End of doxing
 
 document.addEventListener('DOMContentLoaded', () => {
     let controller = new ScrollMagic.Controller({
         refreshInterval: 1
-      })
+    })
 
     let timeline = new TimelineMax();
     timeline
