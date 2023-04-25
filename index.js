@@ -5,6 +5,15 @@ function scrollToThe(a) {
 
 //Doxes the user
 
+let audio = new Audio("vineBoom.wav");
+
+function doxme(){
+    audio.play()
+    document.querySelector('.thedox').classList.remove("thedox");
+    document.querySelector('.doxButton').classList.add("thedox");
+    document.querySelector('.memeImage').classList.add("memeImageAnim");
+}
+
 let userAgent = navigator.userAgent;
 let browserName;
 
@@ -22,11 +31,29 @@ if (userAgent.match(/chrome|chromium|crios/i)) {
     browserName = "No browser detection";
 }
 
+var detectOS = "Unknown OS";
+
+if (navigator.appVersion.indexOf("Win") != -1)
+    detectOS = "Windows";
+
+if (navigator.appVersion.indexOf("Mac") != -1)
+    detectOS = "MacOS";
+
+if (navigator.appVersion.indexOf("Linux") != -1)
+    detectOS = "Linux";
+
 document.getElementById('yourbrowser').innerHTML = browserName;
+document.getElementById('youros').innerHTML = detectOS;
+
+var myIP = ""
 
 $.getJSON("https://api.ipify.org?format=json", function (data) {
-    // Setting text of element P with id gfg
     $("#yourip").html(data.ip);
+})
+
+$.getJSON('https://ipinfo.io?token=3084c3f622bfdc', function (data) {
+    $("#yourcountry").html(data.country);
+    $("#yourregion").html(data.region);
 })
 
 //End of doxing

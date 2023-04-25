@@ -11,6 +11,27 @@
     --bright-yellow: #FFD800;
 }
 
+.thedox {
+    display: none;
+}
+
+.memeImage {
+    position: fixed;
+    width: 0%;
+    height: 100vh;
+    z-index: 9999999;
+}
+
+.memeImageAnim{
+    animation: imagememeani .5s;
+}
+
+@keyframes imagememeani {
+    0% {opacity: .5; width: 100%;}
+    25% {opacity: .5; width: 100%;}
+    100% {opacity: 0; width: 100%;}
+  }
+
 btn {
     cursor: pointer;
 }
@@ -190,16 +211,18 @@ h2 {
     font-family: 'Secular One', sans-serif;
     text-align: center;
 }
+
 h3 {
     font-size: calc(var(--normal-font-size)*1.5);
     font-family: 'Secular One', sans-serif;
     text-align: center;
 }
 
-.doxstats{
+.doxstats {
     display: none;
 }
-.doxstatss{
+
+.doxstatss {
     display: block;
 }
 
@@ -213,60 +236,68 @@ p {
     padding: 0;
 }
 
-.cisEmote{
+.cisEmote {
     width: calc(var(--normal-font-size)*1.25);
 }
 
-.socialGrid{
+.socialGrid {
     grid-gap: 1em;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(100px,3fr));
+    grid-template-columns: repeat(auto-fit, minmax(100px, 3fr));
     width: 75%;
     /*grid-template-rows: 1fr 1fr 1fr 1fr;*/
 }
-.socialItem{
+
+.socialItem {
     display: flex;
     flex-direction: column;
     aspect-ratio: 1 / 1;
     /*width: clamp(5em, 20vw, 7em);*/
 }
 
-.youtubeSS{
+.youtubeSS {
     background-color: red;
 }
-.twitterSS{
+
+.twitterSS {
     background-color: #1DA1F2;
 }
-.gamejoltSS{
+
+.gamejoltSS {
     background-color: #cf0;
 }
-.newgroundsSS{
+
+.newgroundsSS {
     fill: black;
     background-color: #FFBE00;
 }
-.itchSS{
+
+.itchSS {
     background-color: #FA5C5C;
 }
-.githubSS{
+
+.githubSS {
     background-color: purple;
 }
-.tumblrSS{
+
+.tumblrSS {
     background-color: #35465c;
 }
-.roundShit{
+
+.roundShit {
     border-radius: 1rem;
     transition: fill .25s, background-color .25s;
 }
 
-.roundShit:hover{
+.roundShit:hover {
     fill: white;
     background-color: orange;
 }
 
-.gameGrid{
+.gameGrid {
     grid-gap: 1em;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(206px,2fr));
+    grid-template-columns: repeat(auto-fit, minmax(206px, 2fr));
     width: 75%;
     justify-items: center;
     /*grid-template-rows: 1fr 1fr 1fr 1fr;*/
@@ -286,7 +317,7 @@ p {
 }
 
 .gameItemStuff {
-    width:100%;
+    width: 100%;
     color: white;
     text-align: center;
     line-height: 100%;
@@ -300,7 +331,7 @@ p {
     border-radius: .5rem;
 }
 
-.gameItemAAA a{
+.gameItemAAA a {
     width: 50%;
     padding: .5em;
     font-family: 'Varela Round', sans-serif;
@@ -315,12 +346,12 @@ p {
     background: rgba(0, 0, 0, .5);
     z-index: 1;
     font-size: calc(var(--normal-font-size)*0.75);
-    
+
 }
 
 .aboutVideo {
     width: clamp(10em, 95vw, 25em);
-    height: clamp(15em, 30vw,20rem);
+    height: clamp(15em, 30vw, 20rem);
     border-radius: 1rem;
     border-color: rgba(0, 0, 0, 0);
 }
