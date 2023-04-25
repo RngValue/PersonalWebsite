@@ -12,7 +12,9 @@ function doxme() {
     document.querySelector('.thedox').classList.remove("thedox");
     document.querySelector('.doxButton').classList.add("thedox");
     document.querySelector('.memeImage').classList.add("memeImageAnim");
+}
 
+function gg() {
     setTimeout(function () {
         document.getElementById("forad").innerHTML += `<div class="adsbygoogle" id="test-ad"></div>`;
         const testAd = document.getElementById('test-ad');
@@ -26,6 +28,8 @@ function doxme() {
         }
     }, 1000)
 }
+
+gg()
 
 let userAgent = navigator.userAgent;
 let browserName;
