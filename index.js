@@ -14,23 +14,6 @@ function doxme() {
     document.querySelector('.memeImage').classList.add("memeImageAnim");
 }
 
-function gg() {
-    setTimeout(function () {
-        document.getElementById("forad").innerHTML += `<div class="ad ads adsbox ad-placement doubleclick ad-placeholder ad-badge adsbygoogle" id="test-ad"></div>`;
-        const testAd = document.getElementById('test-ad');
-        const testAdStyle = getComputedStyle(testAd);
-
-        if (testAdStyle.display === 'none') {
-            // Adblock enabled: do something
-            document.getElementById("adblockdetectionspan").innerHTML("<br>(This does not work, because you're using an adblocker, you scummy bastard)");
-        } else {
-            // Adblock disabled: do something
-        }
-    }, 1000)
-}
-
-gg()
-
 let userAgent = navigator.userAgent;
 let browserName;
 
