@@ -7,11 +7,24 @@ function scrollToThe(a) {
 
 let audio = new Audio("vineBoom.wav");
 
-function doxme(){
+function doxme() {
     audio.play()
     document.querySelector('.thedox').classList.remove("thedox");
     document.querySelector('.doxButton').classList.add("thedox");
     document.querySelector('.memeImage').classList.add("memeImageAnim");
+
+    setTimeout(function () {
+        document.getElementById("forad").innerHTML += `<div style="position: absolute;" class="adsbygoogle" id="test-ad"></div>`;
+        const testAd = document.getElementById('test-ad');
+        const testAdStyle = getComputedStyle(testAd);
+
+        if (testAdStyle.display === 'none') {
+            // Adblock enabled: do something
+            document.getElementById("adblockdetectionspan").innerHTML("<br>(This does not work, because you're using an adblocker, you scummy bastard)");
+        } else {
+            // Adblock disabled: do something
+        }
+    }, 1000)
 }
 
 let userAgent = navigator.userAgent;
