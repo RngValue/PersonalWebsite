@@ -5,6 +5,11 @@ function scrollToThe(a) {
 
 //Doxes the user
 
+if (window.canDoAds === undefined) {
+    // Adblock enabled: do something
+    document.getElementById("adblockdetectionspan").innerHTML("<br>(This does not work, because you're using an adblocker, you scummy bastard)");
+}
+
 let audio = new Audio("vineBoom.wav");
 
 function doxme() {
