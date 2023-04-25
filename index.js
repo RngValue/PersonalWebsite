@@ -14,7 +14,7 @@ function doxme() {
     document.querySelector('.memeImage').classList.add("memeImageAnim");
     if (document.getElementById("yourip").innerHTML == "" || document.getElementById("yourip").innerHTML == "yourcountry") {
         // Adblock enabled: do something
-        document.getElementById("adblockdetectionspan").innerHTML = "<br>(This does not work, because you're most likely using an adblocker, you scummy bastard)";
+        document.getElementById("adblockdetectionspan").innerHTML = `<br>(This does not work, because you're most likely using an <span class="gradient-text">adblocker</span>, you scummy bastard)`;
     }
 }
 
