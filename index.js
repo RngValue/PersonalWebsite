@@ -16,7 +16,7 @@ function doxme() {
 
 function gg() {
     setTimeout(function () {
-        document.getElementById("forad").innerHTML += `<div class="adsbygoogle" id="test-ad"></div>`;
+        document.getElementById("forad").innerHTML += `<div class="ad ads adsbox ad-placement doubleclick ad-placeholder ad-badge adsbygoogle" id="test-ad"></div>`;
         const testAd = document.getElementById('test-ad');
         const testAdStyle = getComputedStyle(testAd);
 
