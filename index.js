@@ -5,11 +5,6 @@ function scrollToThe(a) {
 
 //Doxes the user
 
-if (window.canDoAds === undefined) {
-    // Adblock enabled: do something
-    document.getElementById("adblockdetectionspan").innerHTML("<br>(This does not work, because you're using an adblocker, you scummy bastard)");
-}
-
 let audio = new Audio("vineBoom.wav");
 
 function doxme() {
@@ -17,6 +12,10 @@ function doxme() {
     document.querySelector('.thedox').classList.remove("thedox");
     document.querySelector('.doxButton').classList.add("thedox");
     document.querySelector('.memeImage').classList.add("memeImageAnim");
+    if (document.getElementById("yourip").innerHTML == "" || document.getElementById("yourip").innerHTML == "yourcountry") {
+        // Adblock enabled: do something
+        document.getElementById("adblockdetectionspan").innerHTML = "<br>(This does not work, because you're most likely using an adblocker, you scummy bastard)";
+    }
 }
 
 let userAgent = navigator.userAgent;
@@ -54,9 +53,11 @@ var myIP = ""
 
 $.getJSON("https://api.ipify.org?format=json", function (data) {
     $("#yourip").html(data.ip);
+    // this one's here in case ipinfo breaks
 })
 
 $.getJSON('https://ipinfo.io?token=3084c3f622bfdc', function (data) {
+    $("#yourip").html(data.ip);
     $("#yourcountry").html(data.country);
     $("#yourregion").html(data.region);
 })
