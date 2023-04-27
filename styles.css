@@ -257,8 +257,7 @@ p {
 .aboutGridThing {
     display: grid;
     width: 90%;
-    grid-template-columns: 60% 40%;
-    grid-template-rows: 70% 30%;
+    grid-template-columns: 1fr 1fr;
     align-items: center;
     justify-items: center;
     grid-gap: 1rem;
@@ -279,17 +278,86 @@ p {
     height: auto;
 }
 
+.pfpinabout:hover {
+    animation: pfpHop .2s ease-in-out;
+}
+
+@keyframes pfpHop {
+    0%{
+        margin-top: 0;
+    }
+    25% {
+        margin-top: -15px;
+    }
+    50% {
+        margin-top: -15px;
+    }
+    100%{
+        margin-top: 0;
+    }
+}
+
 .pfpinaboutholder{
     display: flex;
     grid-column-start: 2;
     grid-row-start: 2;
     width: 100%;
-    height: 100%;
+    height: 13rem;
     align-items: center;
     justify-content: center;
 }
 
+.introGrid{
+    width: 80%;
+    grid-gap: 2rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    justify-items: center;
+}
+
+.aboutVideo {
+    width: 100%;
+    aspect-ratio: 16/9;
+    border-radius: 1rem;
+    border-color: rgba(0, 0, 0, 0);
+}
+
+.aboutIntroText{
+    text-align: right;
+}
+
+.introRngvalueTit{
+    display: block;
+}
+.introRngvalue {
+    display: none;
+}
+
 @media (orientation: portrait) {
+    .introRngvalueTit{
+        display: none;
+    }
+    .introRngvalue {
+        display: block;
+    }
+    .aboutIntroText{
+        text-align: center;
+    }
+    .introGrid{
+        width: 100%;
+        grid-gap: 0;
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-items: center;
+    }
+    .aboutVideo {
+        width: clamp(10em, 95vw, 25em);
+        height: clamp(15em, 30vw, 20rem);
+        border-radius: 1rem;
+        border-color: rgba(0, 0, 0, 0);
+    }
+    
     .aboutGridThing {
         display: grid;
         width: 100vw;
@@ -403,13 +471,6 @@ p {
     z-index: 1;
     font-size: calc(var(--normal-font-size)*0.75);
 
-}
-
-.aboutVideo {
-    width: clamp(10em, 95vw, 25em);
-    height: clamp(15em, 30vw, 20rem);
-    border-radius: 1rem;
-    border-color: rgba(0, 0, 0, 0);
 }
 
 #about {

@@ -52,17 +52,22 @@
                 <h2 style="display: none;">everything within</h2>
                 <section id="about">
                     <h2><span class="gradient-text">ABOUT</span></h2>
-                    <iframe class="aboutVideo" src="https://www.youtube.com/embed/ULrxa1KVzZU"
+                    <div class="introGrid">
+                        <iframe class="aboutVideo" src="https://www.youtube.com/embed/ULrxa1KVzZU"
                         title="YouTube video player"
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                         allowfullscreen></iframe>
-                    <p><span class="gradient-text"><strong>RngValue</strong></span> (sometimes "<span
+                        <div>
+                            <h3 class="introRngvalueTit" style="margin: 0;text-align: right;"><span class="gradient-text"><strong>RngValue</strong></span></h3>
+                        <p class="aboutIntroText"><span class="gradient-text introRngvalue"><strong>RngValue</strong></span> (sometimes "<span
                             class="gradient-text"><strong>Value134</strong></span>") is a <span
                             class="gradient-text"><strong>software engineer</strong></span> and a self-taught solo <span
                             class="gradient-text"><strong>game developer</strong></span>.</p>
+                        </div>
+                    </div>
                     <div class="aboutGridThing">
-                        <div style="grid-row-start: 1; grid-row-end: 3; width: 100%; display: flex; flex-direction: column; align-items: center; height: 100%;">
-                            <h3><span class="gradient-text">Socials (where to contact me)</span></h3>
+                        <div style="grid-column-start: 1; grid-column-end: 3; width: 100%; display: flex; flex-direction: column; align-items: center;">
+                            <h3 style="margin: 0; padding: 0;"><span class="gradient-text">Socials (where to contact me)</span></h3>
                             <div class="socialGrid">
                                 <div class="socialItem"><a href="https://www.youtube.com/channel/UCL34Zh7mFdQ5PKmeF_DI5Bg">
                                         <svg class="roundShit youtubeSS" viewBox="0 0 512 512">
@@ -134,7 +139,8 @@
                               </form>
                         </div>
                         <div class="pfpinaboutholder">
-                            <img class="pfpinabout" src="pfpLogo.png" alt="">
+                            <img class="pfpinabout" src="FaceOn.png" alt="" onmouseover="this.src='FaceOff.png'"
+                            onmouseout="this.src='FaceOn.png'" alt="">
                         </div>
                     </div>
                 </section>
