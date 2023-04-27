@@ -262,6 +262,7 @@ p {
     align-items: center;
     justify-items: center;
     grid-gap: 1rem;
+    margin-right: 3vw;
 }
 
 .socialGrid {
@@ -344,6 +345,7 @@ p {
     }
     .aboutIntroText{
         text-align: center;
+        width: 90vw;
     }
     .introGrid{
         width: 100%;
