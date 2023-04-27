@@ -22,15 +22,29 @@
     z-index: 9999999;
 }
 
-.memeImageAnim{
+.memeImageAnim {
     animation: imagememeani .5s;
 }
 
 @keyframes imagememeani {
-    0% {opacity: .5; height: 100vh; width: 100%;}
-    25% {opacity: .5; height: 100vh; width: 100%;}
-    100% {opacity: 0; height: 100vh; width: 100%;}
-  }
+    0% {
+        opacity: .5;
+        height: 100vh;
+        width: 100%;
+    }
+
+    25% {
+        opacity: .5;
+        height: 100vh;
+        width: 100%;
+    }
+
+    100% {
+        opacity: 0;
+        height: 100vh;
+        width: 100%;
+    }
+}
 
 btn {
     cursor: pointer;
@@ -242,34 +256,58 @@ p {
 
 .aboutGridThing {
     display: grid;
-    width: 100vw;
-    grid-template-columns: 50% 50%;
+    width: 90%;
+    grid-template-columns: 60% 40%;
+    grid-template-rows: 70% 30%;
     align-items: center;
     justify-items: center;
-}
-
-@media (orientation: portrait){
-    .aboutGridThing {
-        display: grid;
-        width: 100vw;
-        grid-template-columns: 100%;
-        align-items: center;
-        justify-items: center;
-    }
+    grid-gap: 1rem;
 }
 
 .socialGrid {
     grid-gap: 1em;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(100px, 3fr));
-    width: 75%;
+    grid-template-columns: repeat(auto-fit, minmax(6rem, 1fr));
+    width: 90%;
+    align-items: center;
+    justify-items: center;
     /*grid-template-rows: 1fr 1fr 1fr 1fr;*/
+}
+
+.pfpinabout {
+    width: 45%;
+    height: auto;
+}
+
+.pfpinaboutholder{
+    display: flex;
+    grid-column-start: 2;
+    grid-row-start: 2;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+@media (orientation: portrait) {
+    .aboutGridThing {
+        display: grid;
+        width: 100vw;
+        grid-template-columns: 100%;
+        grid-template-rows: 1fr;
+        align-items: center;
+        justify-items: center;
+    }
+    .pfpinaboutholder {
+        display: none;
+    }
 }
 
 .socialItem {
     display: flex;
     flex-direction: column;
     aspect-ratio: 1 / 1;
+    width: 100%;
     /*width: clamp(5em, 20vw, 7em);*/
 }
 
@@ -379,7 +417,7 @@ p {
     font-size: var(--normal-font-size);
     color: white;
     background-color: black;
-    overflow-x: hidden;
+    overflow: hidden;
     flex-direction: column;
     align-items: center;
     width: 100%;

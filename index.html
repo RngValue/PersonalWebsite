@@ -61,7 +61,7 @@
                             class="gradient-text"><strong>software engineer</strong></span> and a self-taught solo <span
                             class="gradient-text"><strong>game developer</strong></span>.</p>
                     <div class="aboutGridThing">
-                        <div style="width: 97%; display: flex; justify-content: center; flex-direction: column; align-items: center;">
+                        <div style="grid-row-start: 1; grid-row-end: 3; width: 100%; display: flex; flex-direction: column; align-items: center; height: 100%;">
                             <h3><span class="gradient-text">Socials (where to contact me)</span></h3>
                             <div class="socialGrid">
                                 <div class="socialItem"><a href="https://www.youtube.com/channel/UCL34Zh7mFdQ5PKmeF_DI5Bg">
@@ -125,12 +125,16 @@
                                         </svg></a></div>
                             </div>
                         </div>
-                        <div style="width: 97%; display: flex; justify-content: center; flex-direction: column; align-items: center;">
-                            <h3><span class="gradient-text">Sign up for my e-mail newsletters</span></h3>
+                        <div style="width: 100%; height: 100%; display: flex; flex-direction: column; align-items: center;">
+                            <h3 style="margin: 0;font-size: var(--normal-font-size); padding-top: 2em;"><span class="gradient-text">e-mail newsletters</span></h3>
+                            <p style="width: 90%">If you're interested in my work, you can sign up for my e-mail newsletters.<br>(The input field below does nothing at the moment)</p>
                             <form style="aspect-ratio: 10/2;width: 100%; display: flex; align-items: center; flex-direction: column;" action="/action_page.php">
-                                <label for="fname"><p>Your e-mail:</p></label>
+                                <label for="fname"><p style="margin: 0; padding: 0;">Your e-mail:</p></label>
                                 <input style="width: 75%" type="text" id="fname" name="fname">
                               </form>
+                        </div>
+                        <div class="pfpinaboutholder">
+                            <img class="pfpinabout" src="pfpLogo.png" alt="">
                         </div>
                     </div>
                 </section>
