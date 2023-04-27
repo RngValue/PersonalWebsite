@@ -240,6 +240,24 @@ p {
     width: calc(var(--normal-font-size)*1.25);
 }
 
+.aboutGridThing {
+    display: grid;
+    width: 100vw;
+    grid-template-columns: 50% 50%;
+    align-items: center;
+    justify-items: center;
+}
+
+@media (orientation: portrait){
+    .aboutGridThing {
+        display: grid;
+        width: 100vw;
+        grid-template-columns: 100%;
+        align-items: center;
+        justify-items: center;
+    }
+}
+
 .socialGrid {
     grid-gap: 1em;
     display: grid;
