@@ -97,7 +97,7 @@ document.addEventListener('DOMContentLoaded', () => {
 const navbar = document.querySelector(".navbarBack");
 const backbutt = document.querySelector(".backToTopBtn");
 
-const observer = new IntersectionObserver((entries) => {
+const observerrer = new IntersectionObserver((entries) => {
     entries.forEach((entry) => {
         if (entry.isIntersecting) {
             navbar.classList.add("nav-scrolled");
@@ -117,9 +117,45 @@ const observerer = new IntersectionObserver((entries) => {
     });
 });
 
+const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add("show")
+            entry.target.classList.remove("hiddenoppos")
+        }
+    });
+});
+
+const observerSo = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add("showSocials")
+        }
+    });
+});
+
+const observerTits = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add("showTits")
+        }
+    });
+});
 
 const pageSectionStuff = document.querySelectorAll("#everything");
-pageSectionStuff.forEach((el) => observer.observe(el));
+pageSectionStuff.forEach((el) => observerrer.observe(el));
 
 const pageSectionStaff = document.querySelectorAll("#everythingwithin");
 pageSectionStaff.forEach((el) => observerer.observe(el));
+
+const observeTexts = document.querySelectorAll(".hidden");
+observeTexts.forEach((el) => observer.observe(el));
+
+const observeTextsOp = document.querySelectorAll(".hiddenoppos");
+observeTextsOp.forEach((el) => observer.observe(el));
+
+const observeTitles = document.querySelectorAll(".hiddenTitle");
+observeTitles.forEach((el) => observerTits.observe(el));
+
+const observeSocialItems = document.querySelectorAll(".socialItem");
+observeSocialItems.forEach((el) => observerSo.observe(el));

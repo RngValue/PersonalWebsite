@@ -51,15 +51,15 @@
             <section id="everythingwithin">
                 <h2 style="display: none;">everything within</h2>
                 <section id="about">
-                    <h2><span class="gradient-text">ABOUT</span></h2>
+                    <h2 class="hiddenTitle"><span class="gradient-text">ABOUT</span></h2>
                     <div class="introGrid">
                         <iframe class="aboutVideo" src="https://www.youtube.com/embed/ULrxa1KVzZU"
                         title="YouTube video player"
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                         allowfullscreen></iframe>
                         <div>
-                            <h3 class="introRngvalueTit" style="margin: 0;text-align: right;"><span class="gradient-text"><strong>RngValue</strong></span></h3>
-                        <p class="aboutIntroText"><span class="gradient-text introRngvalue"><strong>RngValue</strong></span> (sometimes "<span
+                            <h3 class="introRngvalueTit hidden" style="margin: 0;text-align: right;"><span class="gradient-text"><strong>RngValue</strong></span></h3>
+                        <p class="aboutIntroText hidden"><span class="gradient-text introRngvalue"><strong>RngValue</strong></span> (sometimes "<span
                             class="gradient-text"><strong>Value134</strong></span>") is a <span
                             class="gradient-text"><strong>software engineer</strong></span> and a self-taught solo <span
                             class="gradient-text"><strong>game developer</strong></span>.</p>
@@ -67,7 +67,7 @@
                     </div>
                     <div class="aboutGridThing">
                         <div style="grid-column-start: 1; grid-column-end: 3; width: 100%; display: flex; flex-direction: column; align-items: center;">
-                            <h3 style="width: 80%; margin: 0; padding: 0;"><span class="gradient-text">Socials (where to contact me)</span></h3>
+                            <h3 class="hidden" style="width: 80%; margin: 0; padding: 0;"><span class="gradient-text">Socials (where to contact me)</span></h3>
                             <div class="socialGrid">
                                 <div class="socialItem"><a href="https://www.youtube.com/channel/UCL34Zh7mFdQ5PKmeF_DI5Bg">
                                         <svg class="roundShit youtubeSS" viewBox="0 0 512 512">
@@ -145,8 +145,8 @@
                     </div>
                 </section>
                 <section id="games">
-                    <h2><span class="gradient-text">GAMES</span></h2>
-                    <p>For game development I use either <span class="gradient-text"><strong>Godot</strong></span> or
+                    <h2 class="hiddenTitle"><span class="gradient-text">GAMES</span></h2>
+                    <p class="hidden">For game development I use either <span class="gradient-text"><strong>Godot</strong></span> or
                         <span class="gradient-text"><strong>Gamemaker: Studio</strong></span>, but mostly <span
                             class="gradient-text"><strong>Godot</strong></span>.<br>(currently experimenting with
                         Unity and RpgMaker)<br>The games I've decided to share here were all made with <span class="gradient-text"><strong>Godot</strong></span>.</p>
@@ -190,7 +190,7 @@
                     </div>
                 </section>
                 <section id="art" class="general">
-                    <h2><span class="gradient-text">ART</span></h2>
+                    <h2 class="hiddenTitle"><span class="gradient-text">ART</span></h2>
                     <p>The company itself is a very successful company. It will happen to the wise that the architect
                         succeeds, further, but by right, without greed and indeed fault. This option is never taken and
                         the consequences of the debts are therefore held at times. I will never leave open the error of
@@ -217,11 +217,11 @@
                         pleasure of repelling insight often less ad.</p>
                 </section>
                 <section id="ask" class="general">
-                    <h2><span class="gradient-text">FAQ</span></h2>
-                    <h3><span class="gradient-text">Who are you?</span></h3>
-                    <p>Hello, my name is RngValue. An AI chat bot trained on an absurd amount of hateful reddit threads.</p>
-                    <h3><span class="gradient-text">Can I dox you?</span></h3>
-                    <p>no, I'll do it first</p>
+                    <h2 class="hiddenTitle"><span class="gradient-text">FAQ</span></h2>
+                    <h3 class="hidden"><span class="gradient-text">Who are you?</span></h3>
+                    <p class="hiddenoppos">Hello, my name is RngValue. An AI chat bot trained on an absurd amount of hateful reddit threads.</p>
+                    <h3 class="hidden"><span class="gradient-text">Can I dox you?</span></h3>
+                    <p class="hiddenoppos">no, I'll do it first</p>
                     <button class="doxButton" onclick="doxme()">You will not...</button>
                     <ul class="thedox">
                         <li>Your Browser: <span class="gradient-text" id="yourbrowser"></span></li>
@@ -230,10 +230,10 @@
                         <li>You live in: <span class="gradient-text" id="yourcountry"></span> <span class="gradient-text" id="yourregion"></span></li>
                     </ul>
                     <p id="adblockdetectionspan"></p>
-                    <h3><span class="gradient-text">What is your favourite colour?</span></h3>
-                    <p>Are you blind or something? Tell me... what do <span class="gradient-text"><i>you</i></span> think.</p>
-                    <h3><span class="gradient-text">Who's your favourite UNDERTALE character?</span></h3>
-                    <p>Oh, that has to be <span style="color: transparent; text-shadow: 0 0 10px darkred;">Prunsel</span>.<br>They are the most well written character in the game!</p>
+                    <h3 class="hidden"><span class="gradient-text">What is your favourite colour?</span></h3>
+                    <p class="hiddenoppos">Are you blind or something? Tell me... what do <span class="gradient-text"><i>you</i></span> think.</p>
+                    <h3 class="hidden"><span class="gradient-text">Who's your favourite UNDERTALE character?</span></h3>
+                    <p class="hiddenoppos">Oh, that has to be <span style="color: transparent; text-shadow: 0 0 10px darkred;">Prunsel</span>.<br>They are the most well written character in the game!</p>
 
                     <footer style="font-size: 16px; padding-top: 8rem; padding-bottom: 1rem">RngValue (c)</footer>
                 </section>
@@ -249,8 +249,8 @@
 
 <script src="index.js"></script>
 
-<!--Lemme pull out a TobyFox and fucking curse you for looking into the html...
-    MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+<!--
+MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
 MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
 MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
 MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
