@@ -528,6 +528,26 @@ p {
     margin-top: 0;
 }
 
+.artGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 2fr));
+    justify-items: center;
+    align-items: center;
+    width: 90%;
+}
+
+.artGrid div{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+}
+
+.artGrid div img{
+    width: 90%;
+    align-self: center;
+}
+
 /*}*/
 
 .hidden {
