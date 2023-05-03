@@ -3,8 +3,7 @@ function scrollToThe(a) {
     sekce.scrollIntoView();
 }
 
-
-
+//art gallery popup
 
 document.querySelectorAll('.artGrid div img').forEach(image =>{
     image.onclick = () =>{
@@ -16,10 +15,6 @@ document.querySelectorAll('.artGrid div img').forEach(image =>{
 document.querySelector('.popupimg .reallycoolclosebtn').onclick = () => {
     document.querySelector('.popupimg').style.display = 'none';
 }
-
-
-
-
 
 //Doxes the user
 
