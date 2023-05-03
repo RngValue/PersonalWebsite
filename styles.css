@@ -240,6 +240,7 @@ h3 {
     display: block;
 }
 
+.ccf,
 label,
 ul,
 li,
@@ -285,21 +286,24 @@ p {
 }
 
 @keyframes pfpHop {
-    0%{
+    0% {
         margin-top: 0;
     }
+
     25% {
         margin-top: -15px;
     }
+
     50% {
         margin-top: -15px;
     }
-    100%{
+
+    100% {
         margin-top: 0;
     }
 }
 
-.pfpinaboutholder{
+.pfpinaboutholder {
     display: flex;
     grid-column-start: 2;
     grid-row-start: 2;
@@ -309,7 +313,7 @@ p {
     justify-content: center;
 }
 
-.introGrid{
+.introGrid {
     width: 80%;
     grid-gap: 2rem;
     display: grid;
@@ -325,42 +329,47 @@ p {
     border-color: rgba(0, 0, 0, 0);
 }
 
-.aboutIntroText{
+.aboutIntroText {
     text-align: right;
 }
 
-.introRngvalueTit{
+.introRngvalueTit {
     display: block;
 }
+
 .introRngvalue {
     display: none;
 }
 
 @media (orientation: portrait) {
-    .introRngvalueTit{
+    .introRngvalueTit {
         display: none;
     }
+
     .introRngvalue {
         display: block;
     }
-    .aboutIntroText{
+
+    .aboutIntroText {
         text-align: center;
         width: 90vw;
     }
-    .introGrid{
+
+    .introGrid {
         width: 100%;
         grid-gap: 0;
         display: grid;
         grid-template-columns: 1fr;
         justify-items: center;
     }
+
     .aboutVideo {
         width: clamp(10em, 95vw, 25em);
         height: clamp(15em, 30vw, 20rem);
         border-radius: 1rem;
         border-color: rgba(0, 0, 0, 0);
     }
-    
+
     .aboutGridThing {
         display: grid;
         width: 100vw;
@@ -369,6 +378,7 @@ p {
         align-items: center;
         justify-items: center;
     }
+
     .pfpinaboutholder {
         display: none;
     }
@@ -534,21 +544,89 @@ p {
     justify-items: center;
     align-items: center;
     width: 90%;
+    grid-gap: .5rem;
 }
 
-.artGrid div{
+.artGrid div {
+    box-shadow: 0rem 0rem 0rem 0rem black;
     display: flex;
     width: 100%;
-    height: 100%;
     flex-direction: column;
+    background-color: grey;
+    border-radius: 1rem;
+    transition: transform .5s, box-shadow 0s;
 }
 
-.artGrid div img{
+@media (orientation: landscape) {
+    .artGrid div:hover {
+        box-shadow: 0rem 0rem .5rem .5rem rgba(0, 0, 0, .5);
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        background-color: grey;
+        border-radius: 1rem;
+        transform: scale(115%);
+        z-index: 10;
+    }
+}
+
+.artGrid div img {
     width: 90%;
     align-self: center;
+    margin-top: 1rem;
+    cursor: pointer;
 }
 
 /*}*/
+
+.popupimg {
+    background-color: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    z-index: 999999;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.ccf{
+    color: white;
+    margin-top: 2rem;
+}
+.reallycoolclosebtn{
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+    height: var(--navbar-height);
+    width:auto;
+    cursor: pointer;
+}
+
+.popupimg .theimg{
+    border: 3px;
+    border-style: solid;
+    border-color: var(--dark-orange);
+    height: 35vw;
+    width: auto;
+    margin-left: -2%;
+}
+
+@media (orientation: portrait) {
+    .reallycoolclosebtn{
+        position: absolute;
+        top: 8px;
+        left: 0px;
+        height: var(--navbar-height);
+        width:auto;
+    }
+
+    .popupimg .theimg{
+        height: auto;
+        width: 75vw;
+    }
+}
 
 .hidden {
     opacity: 0;
@@ -584,29 +662,34 @@ p {
     opacity: 1;
 }
 
-.aboutIntroText{
+.aboutIntroText {
     transition-delay: 200ms;
 }
 
-.showSocials{
+.showSocials {
     transform: scale(100%);
 }
 
 .socialItem:nth-child(2) {
     transition-delay: 100ms;
 }
+
 .socialItem:nth-child(3) {
     transition-delay: 200ms;
 }
+
 .socialItem:nth-child(4) {
     transition-delay: 300ms;
 }
+
 .socialItem:nth-child(5) {
     transition-delay: 400ms;
 }
+
 .socialItem:nth-child(6) {
     transition-delay: 500ms;
 }
+
 .socialItem:nth-child(7) {
     transition-delay: 600ms;
 }

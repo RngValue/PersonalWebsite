@@ -3,6 +3,24 @@ function scrollToThe(a) {
     sekce.scrollIntoView();
 }
 
+
+
+
+document.querySelectorAll('.artGrid div img').forEach(image =>{
+    image.onclick = () =>{
+        document.querySelector('.popupimg').style.display = 'flex';
+        document.querySelector('.popupimg .theimg').src = image.getAttribute('src');
+    }
+});
+
+document.querySelector('.popupimg .reallycoolclosebtn').onclick = () => {
+    document.querySelector('.popupimg').style.display = 'none';
+}
+
+
+
+
+
 //Doxes the user
 
 let audio = new Audio("vineBoom.wav");
