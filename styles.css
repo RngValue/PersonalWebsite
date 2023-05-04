@@ -264,6 +264,7 @@ p {
     justify-items: center;
     grid-gap: 1rem;
     margin-right: 3vw;
+    max-width: 1280px;
 }
 
 .socialGrid {
@@ -273,7 +274,6 @@ p {
     width: 90%;
     align-items: center;
     justify-items: center;
-    /*grid-template-rows: 1fr 1fr 1fr 1fr;*/
 }
 
 .pfpinabout {
@@ -320,6 +320,7 @@ p {
     grid-template-columns: 1fr 1fr;
     align-items: center;
     justify-items: center;
+    max-width: 1280px;
 }
 
 .aboutVideo {
@@ -327,6 +328,7 @@ p {
     aspect-ratio: 16/9;
     border-radius: 1rem;
     border-color: rgba(0, 0, 0, 0);
+    max-width: calc(1280px/2);
 }
 
 .aboutIntroText {
@@ -439,7 +441,7 @@ p {
     grid-template-columns: repeat(auto-fit, minmax(206px, 2fr));
     width: 75%;
     justify-items: center;
-    /*grid-template-rows: 1fr 1fr 1fr 1fr;*/
+    max-width: 1280px;
 }
 
 .gameItem {
@@ -545,6 +547,7 @@ p {
     align-items: center;
     width: 90%;
     grid-gap: .5rem;
+    max-width: 1280px;
 }
 
 .artGridItem {
