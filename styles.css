@@ -555,8 +555,9 @@ p {
     display: flex;
     width: 100%;
     flex-direction: column;
-    background-color: grey;
-    border-radius: 1rem;
+    background: linear-gradient(white, grey);
+    border-radius: .25cm;
+    color: black;
     transition: transform .5s, box-shadow 0s;
     height: 100%;
 }
@@ -586,8 +587,8 @@ p {
         display: flex;
         width: 100%;
         flex-direction: column;
-        background-color: grey;
-        border-radius: 1rem;
+        background: linear-gradient(white, grey);
+
         transform: scale(115%);
         z-index: 10;
     }
